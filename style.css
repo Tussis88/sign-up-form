@@ -1,3 +1,30 @@
 html {
-  background-color: pink;
+  margin: 0;
+  padding: 0;
 }
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#image_container {
+  position: relative;
+  width: 100vw;
+}
+
+#image_container  img{
+  position: absolute;
+  width: 100%;
+}
+
+#image_text {
+  width: 100%;
+  background: black;
+  opacity: 0.6;
+  top: 30%;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  position: absolute;
+} 
