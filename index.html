@@ -24,37 +24,37 @@
 
       <div class="form_line">
         <div class="form_obj">
-          <label for="first_name">First Name</label>
-          <input type="text" id="first_name" name="first_name" />
+            <label for="first_name">First Name</label><br>
+          <input type="text" id="first_name" name="first_name" required/>
         </div>
 
         <div class="form_obj">
-          <label for="last_name">Last Name</label>
-          <input type="text" id="last_name" name="last_name" />
-        </div>
-      </div>
-
-      <div class="form_line">
-        <div class="form_obj">
-          <label for="email">email</label>
-          <input type="email" id="email" name="email" />
-        </div>
-
-        <div class="form_obj">
-          <label for="phone_number">phone number</label>
-          <input type="number" id="phone_number" name="phone_number" />
+            <label for="last_name">Last Name</label><br>
+          <input type="text" id="last_name" name="last_name" required/>
         </div>
       </div>
 
       <div class="form_line">
         <div class="form_obj">
-          <label for="password">password</label>
-          <input type="password" id="password" name="password" />
+            <label for="email">email</label><br>
+          <input type="email" id="email" name="email" required/>
         </div>
 
         <div class="form_obj">
-          <label for="confirm_password">confirm password</label>
-          <input type="password" id="confirm_password" name="confirm_password" />
+            <label for="phone_number">phone number</label><br>
+          <input type="number" id="phone_number" name="phone_number" required/>
+        </div>
+      </div>
+
+      <div class="form_line">
+        <div class="form_obj">
+            <label for="password">password</label><br>
+          <input type="password" id="password" name="password" minlength="4" required/>
+        </div>
+
+        <div class="form_obj">
+            <label for="confirm_password">confirm password</label><br>
+          <input type="password" id="confirm_password" name="confirm_password" minlength="4" required/>
         </div>
       </div>
 

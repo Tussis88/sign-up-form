@@ -1,3 +1,12 @@
+:root {
+  --background: #fafafa;
+  --alt-background: #eceff1;
+  --text: #263238;
+  --button: #2E7D32;
+  --error: #D32F2F;
+  --shadow: 2px 2px 6px rgba(0, 0, 25, 0.1);
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -24,16 +33,53 @@ body {
   opacity: 0.6;
   top: 30%;
   text-align: center;
-  color: white;
+  color: var(--background);
   font-size: 100px;
   position: absolute;
 }
 
 #form_container {
+  color: var(--text);
+  background-color: var(--alt-background);
   height: 100vh;
   width: 65vw;
-  padding: 10px;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
+}
+
+h1 {
+  padding: 30px;
+  font-size: 22px;
+}
+
+form {
+  background-color: var(--background);
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+input {
+  border-radius: 4px;
+  border: solid rgba(185, 185, 185, 0.384) 1px;
+  height: 30px;
+  width: 220px;
+  padding: 3px;
+  &:focus {
+    outline: none;
+    box-shadow: var(--shadow);
+    border-color: var(--button);
+  }
+}
+
+button {
+  background-color: var(--button);
+  color: var(--background);
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.form_line {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 20px;
 }
