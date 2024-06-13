@@ -26,16 +26,27 @@ body {
   width: 35vw;
   overflow: hidden;
 }
-
-#image_text {
-  width: 100%;
+#text_container {
+  position: absolute;
+  top: 30%;
+  display: flex;
   background: black;
   opacity: 0.6;
-  top: 30%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#image_text {
   text-align: center;
   color: var(--background);
   font-size: 100px;
-  position: absolute;
+}
+
+#odin_image {
+  height: 90px;
+
 }
 
 #form_container {
